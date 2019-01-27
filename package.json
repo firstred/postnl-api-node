@@ -2,7 +2,9 @@
   "name": "postnl",
   "version": "0.1.0",
   "description": "PostNL node.js API client",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "esnext": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +20,22 @@
   "bugs": {
     "url": "https://github.com/firstred/postnl-api-node/issues"
   },
-  "homepage": "https://github.com/firstred/postnl-api-node#readme"
+  "homepage": "https://github.com/firstred/postnl-api-node#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "qs": "^6.6.0",
+    "uuid": "^3.3.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "type-check": "tsc",
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/node": "^10.12.18",
+    "dotenv": "^6.2.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.2.4"
+  }
 }
